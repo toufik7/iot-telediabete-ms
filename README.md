@@ -36,6 +36,8 @@ Etapes :
 ![image](https://user-images.githubusercontent.com/52804863/134325021-d4d77b01-f91b-4c62-99cd-c447b8854ec2.png)
 
 ### Enregistrer les données glycémie dans MySQL
+![Capture d’écran (409)](https://user-images.githubusercontent.com/52804863/134326707-c942db13-0f7c-4b07-b983-25ff881842b8.png)
+
 ![image](https://user-images.githubusercontent.com/52804863/134325064-9332654f-c8a4-4348-a9e7-a5a70353370d.png)
 
 
