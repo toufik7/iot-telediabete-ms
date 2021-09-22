@@ -21,36 +21,7 @@ public class DataGlucoseService {
 
     @Autowired
     RestTemplate restTemplate;
-
-    /* public static String getBearerTokenHeader() {
-         return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest().getHeader("Authorization");
-     }
-     public ResponseTemplate getDataGlucoseWithPatient(Long idDG){
-         ResponseTemplate rt = new ResponseTemplate();
-         DataGlucose dg = dataGlucoseRepository.findById(idDG).orElse(null);
-
-         String token = getBearerTokenHeader();
-
-         HttpHeaders headers = new HttpHeaders();
-         headers.set("Content-Type", MediaType.APPLICATION_JSON_VALUE);
-         headers.set("Accept", MediaType.APPLICATION_JSON_VALUE);
-         headers.set("Authorization", token);
-         HttpEntity<String> jwtEntity = new HttpEntity<String>(headers);
-
-         // use Rest template to consume rest api
-         // use headers to generate jwtEntity
-         //return response in PatientDTO format
-
-         ResponseEntity<PatientDTO> patientResponse =  restTemplate.exchange(
-                 "http://9001/users/patient/"+dg.getPatientId(), HttpMethod.GET, jwtEntity,
-                 PatientDTO.class);
-
-         PatientDTO patient = patientResponse.getBody();
-
-         rt.setDataGlucose(dg);
-         rt.setPatient(patient);
-         return rt;
-     }*/
+    
     public List<DataGlucose> getDataGlucose() {
         return dataGlucoseRepository.findAll();
     }
